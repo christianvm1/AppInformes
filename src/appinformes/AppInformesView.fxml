@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="121.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appinformes.AppInformesController">
+   <children>
+      <MenuBar layoutX="14.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Informes">
+            <items>
+              <MenuItem fx:id="listado_facturas" mnemonicParsing="false" onAction="#generaFactura" text="Listado Facturas" />
+                  <MenuItem fx:id="ventas" mnemonicParsing="false" onAction="#generaVentas" text="Ventas Totales" />
+                  <MenuItem fx:id="facturas_cliente" mnemonicParsing="false" onAction="#generaFacturasCliente" text="Facturas por Cliente" />
+                  <MenuItem fx:id="listado_facturas_sub" mnemonicParsing="false" onAction="#generaFacturaSub" text="Subinforme Listado Facturas" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="idCliente" layoutX="93.0" layoutY="56.0" />
+      <Label layoutX="28.0" layoutY="60.0" text="Id Cliente:" />
+   </children>
+</AnchorPane>
